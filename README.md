@@ -20,4 +20,4 @@ MongoDB v3.6.3
 |love（愛情運勢）   |String   |
 |money（財務運勢）   |String   |
 |total（整體運勢）   |String   |
-|work（工作名稱）  |String   |
+|work（工作運勢）  |String   |
