@@ -10,7 +10,7 @@ def crawl_work():
 if __name__ == '__main__': 
 
     print('目前時間{}'.format(datetime.datetime.now().strftime('%Y-%m-%d %h %H:%M:%S')))
-    schedule.every(5).seconds.do(crawl_work) 
+    schedule.every(1).hours.do(crawl_work) 
 
     while True:
         schedule.run_pending()
