@@ -20,6 +20,7 @@ class Constellation(scrapy.Spider):
             items['love'] = str(query.css('.TODAY_CONTENT > p:nth-child(4) span::text').extract()) + str(query.css('.TODAY_CONTENT  p:nth-child(5)::text').extract())
             items['work'] = str(query.css('.TODAY_CONTENT > p:nth-child(6) span::text').extract()) + str(query.css('.TODAY_CONTENT  p:nth-child(7)::text').extract())
             items['money'] = str(query.css('.TODAY_CONTENT > p:nth-child(8) span::text').extract()) + str(query.css('.TODAY_CONTENT  p:nth-child(9)::text').extract())
+            #無空值再生成 items
             if items['constellations']:
                 yield(items)
         for n in range(1,12):
