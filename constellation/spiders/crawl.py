@@ -7,7 +7,7 @@ from ..items import ConstellationItem
 
 class Constellation(scrapy.Spider):
     name = 'constellation'
-    start_urls = ['http://astro.click108.com.tw/daily_0.php?iAcDay=2020-03-21&iAstro=0']
+    start_urls = ['http://astro.click108.com.tw/daily_0.php?iAcDay=2020-03-25&iAstro=0']
     url = 'http://astro.click108.com.tw/daily_'
     today = str(datetime.date.today())
     def parse(self,response):

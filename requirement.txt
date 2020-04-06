@@ -1,0 +1,5 @@
+scrapy==1.6.0
+mongo
+pymongo
+schedule
+BeautifulSoup4
